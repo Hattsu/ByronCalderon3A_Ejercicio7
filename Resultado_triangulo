@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ByronCalderon3A_Ejercicio7
+{
+    public class Resultado_triangulo:Triangulos
+    {
+        private String Respuesta { get; set; }
+
+        public Resultado_triangulo()
+        {
+            this.Respuesta = "";
+        }
+        public void Imprimir()
+        {
+            do
+            {
+             Calcular();
+            } while (Respuesta == "s" || Respuesta == "S");
+        }
+    }
+}
